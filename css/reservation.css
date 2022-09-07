@@ -2,7 +2,7 @@
 
 .sub_wrap{ 
     background:#EFEFEF;
-    min-height: 750px;
+    min-height: 850px;
 }
 .sub_title { 
     background:#fff;
@@ -51,6 +51,7 @@
     background-color: #ff6000;
     margin: 25px 10px;
     padding: 15px 20px;
+    border-radius: 2px;
 }
 .notice p {color: #fff;font-size: 15px;}
 .notice p.first{color: yellow;/*! font-weight: bold; */font-size: 18px;margin-bottom: 10px;}
