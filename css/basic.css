@@ -1,7 +1,10 @@
 @charset "UTF-8";
 
 body { width: 100%; min-width: 360px;}
-.contbody_scroll { overflow: hidden;}
+.contbody_scroll { 
+	position: relative;
+	overflow: hidden;
+}
 
 /********** 레이아웃 **********/
 #wrap { 
@@ -13,15 +16,16 @@ body { width: 100%; min-width: 360px;}
 		background: #33353F; 
 	}
 
-	#con_wrap { }
+	#con_wrap { 
+		position: relative;
+		right: 0;
+		z-index: 10;
+}
 	.main_wrap { 
 		display:flex; 
 		flex-direction: column;
-		/* 
-		height: calc(100vh - 177px); 
-		footer의 height값을 억지로 지정
-		*/
-		
+		/* height: calc(100vh - 177px); 
+		footer의 height값을 억지로 지정*/
 		/* border:2px solid red;       */
 	}
 		#con_up { flex:2; display:flex;}
@@ -107,12 +111,10 @@ section > a {
 
 /********** 하단영역 (푸터) **********/
 footer{ 
-	/* 
-	position: fixed;
+	/* position: fixed;
 	width: 100%;
 	left: 0;
-	bottom: 0; 
-	*/
+	bottom: 0; */
 	background-color: #222222;
 	padding: 15px 6px;
 }

@@ -1,70 +1,76 @@
 @charset "UTF-8";
 
-.sub_wrap {background-color: #EFEFEF;}
-.sub_title {
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #ddd;
+.sub_wrap{ 
+    background:#EFEFEF;
+    min-height: 550px;
 }
-.sub_title h2{
-    text-align: center;
-    line-height: 50px;
+.sub_title { 
+    background:#fff;
+    border-bottom:1px solid #b9b9b9;  
+    display: flex;
 }
-
-.sub_con {}
-.sub_con > p {
-    padding: 20px 0 10px 12px;
-    font-size: 14px;
-}
-/********** 의료진 **********/
-.sub_search {
-    position: relative;
-    background-color: #FFFFFF;
-    border:1px solid #ddd;
-    margin: 0 12px;
-    padding: 25px 17px 17px;
-    border-radius: 5px;
-}
-.sub_search_input { 
-    border: none;
-    border-bottom: 1px solid #bbb;
-    height: 30px;
-    padding-left: 10px;
-    width: calc(100% - 61px);
-}
-.sub_search_input::placeholder{
-    color: #999;
-    font-size: 12px;
-}
-.sub_search_btn { 
+.sub_title h2 { 
+    text-align:center;
+    line-height:50px; 
     position: absolute;
-    right: 10px;
-    display: inline-block;
-    border: none; border-radius: 2px;
-    padding: 8px 12px;
-    width: 49px;
-    font-size: 12px;
-    background-color: #666666;
-    color: #FFFFFF;
+    left: 50%;
+    transform: translateX(-50%);
 }
-
-.conlist {
-    padding: 20px 6px 0;
-    overflow: hidden;
+.sub_title a.back{
+    display: inline-block;
+    background-image: url(../img/check/img_prev.png);
+    width: 45px; height: 50px;
+    background-size: contain;
+    font-size: 0;
+}
+.sub_con > p { 
+    padding:20px 0 10px 12px;
+    font-size:14px;
+}
+.sub_search { 
+    position: relative;
+    background:#fff;
+    border:1px solid #b9b9b9;
+    margin:0 12px;
+    padding:25px 17px 17px;
+    border-radius:5px;
+}
+.sub_search_input {
+    border:none;
+    border-bottom:1px solid #b9b9b9;
+    height:30px;
+    padding-left:10px;
+    width:calc(100% - 70px)
+}
+.sub_search_input::placeholder {
+    color:#999; font-size:12px;
+}
+.sub_search_btn {
+    position:absolute; right:12px;
+    display:inline-block; 
+    padding:8px 12px;
+    border:none; border-radius:2px;
+    width:50px;
+    background:#666; color:#fff;
+    font-size:12px;
+}
+.conlist { 
+    padding:20px 6px 0;
+    overflow:hidden; 
 }
 .conlist li { 
     float: left;
-    width: 50%;
-    padding: 6px;
+    width:50%;
+    padding: 6px; 
 }
-.conlist a {
-    display: block;
-    height: 100px;
-    background-color: #FFF;
-    border: 1px solid #ddd;
-    border-radius: 2px;
-    text-align: center;
+.conlist a {  
+    display:block;
+    height:100px;
+    background:#fff;
+    border:1px solid #b9b9b9;
+    border-radius:2px;
+    text-align:center;
 }
-.conlist img {}
 
 
 /********** 진료예약 **********/
@@ -101,3 +107,206 @@
     font-weight: bold;
     line-height: 40px;
 }
+
+
+/********** 예약조회 **********/
+.check_sub_title{
+    display: flex;
+    background:#fff;
+    border-bottom:1px solid #b9b9b9;  
+}
+.check_sub_title h2 { 
+    line-height:50px; 
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.check_sub_title a.back{
+    display: inline-block;
+    background-image: url(../img/check/img_prev.png);
+    width: 45px; height: 50px;
+    background-size: contain;
+    font-size: 0;
+}
+.login{
+    display: flex;
+    padding: 20px 10px 0;
+}
+.login_inputs{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+.login_inputs input{
+    border: none;
+    border: 1px solid #b9b9b9;
+    height: 35px;
+    padding-left: 10px;
+    width:calc(100% - 85px);
+    margin-bottom: 5px;
+}
+.login_inputs input::placeholder {
+    color:#999; font-size:13px;
+}
+.login_btn button{
+    position:absolute; right:12px;
+    display:inline-block; 
+    padding:8px 12px;
+    border:none; border-radius:2px;
+    width:75px; height: 75px;
+    background:#4AB8BC; color:#fff;
+    font-size:13px;
+}
+.sub_con > p span{
+    color: #4AB8BC;
+    font-weight: bold;
+}
+.help{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+.help_search{}
+.help_search ul{ 
+    display: flex;
+    justify-content: center;
+}
+.help_search li{
+    border-right: 1px solid #ddd;
+    margin: 20px 0;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #aaa;
+    font-weight: bold;
+}
+.help_search li:last-of-type{
+    border: none;
+}
+.help_signup{
+    background-color: #4AB8BC;
+    color: #fff;
+    text-align: center;
+    margin: 0 12px;
+    border-radius: 2px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.error{
+    background-color: #fff;
+    margin: 20px 10px;
+    display: flex;
+    padding: 5px;
+}
+.error img{
+    width: 15px; height: 15px;
+}
+.error p{
+    color: rgb(226, 23, 23);
+    font-size: 12px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+/********** 전화번호 안내 **********/
+.number_wrap{
+    margin: 10px 5px;
+}
+.number_wrap ul{}
+.number_wrap li{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    height: 50px;
+    padding: 0 5px;
+}
+.number_wrap li p{
+    font-size: 14px;
+    line-height: 50px;
+}
+.number_wrap li a{
+    background-color: #4AB8BC;
+    height: 30px;
+    width: 80px;
+    margin: 10px 0;
+    border-radius: 2px;
+}
+.number_wrap li a p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    margin: -10px 11px;
+}
+
+/********** 건강검진 예약 **********/
+.table{
+    margin: 5px 10px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table tr{}
+.table td.title{    
+    background-color: #4ab8bc;
+    color: #fff;
+    padding: 20px 5px;
+    width: 35%;
+    font-size: 14px;
+    font-weight: bold;
+}
+.table td{
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.table tr:nth-of-type(1) td input{
+    width: calc(100% - 20px);
+    height: 30px;
+    margin: 10px;
+    border: 1px solid #ddd;
+}
+.table tr:nth-of-type(2) td input{
+    margin-left: 10px;
+    color: #aaa;
+}
+.table tr:nth-of-type(3) td:nth-of-type(2){
+    font-size: 13px;
+    color: #aaa;
+    text-decoration-line: line-through;
+}
+.table tr:nth-of-type(4) td input{
+    width: calc(100% - 20px);
+    height: 30px;
+    margin: 10px;
+    border: 1px solid #ddd;
+}
+.table tr:nth-of-type(4) td input::placeholder{
+    color:#999; 
+    font-size:13px;
+    padding-left: 10px;
+}
+.table tr:nth-of-type(5) td textarea{
+    width: calc(100% - 20px);
+    height: 100px;
+    margin: 10px;
+    border: 1px solid #ddd;
+}
+
+.healh_bottom{
+    display: flex;
+}
+.health_bottom p{
+    width: calc(100% /2);
+    border: 1px solid red;
+    color: red;
+}
+.health_bottom p:nth-last-child(1){
+    background-color: #EFEFEF;
+}
+.health_bottom p:nth-last-child(2){
+    background-color: #4AB8BC;
+}
+
+
