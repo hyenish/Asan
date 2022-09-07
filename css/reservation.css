@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+.sub_wrap{ 
+    background:#EFEFEF;
+    min-height: 750px;
+}
+.sub_title { 
+    background:#fff;
+    border-bottom:1px solid #b9b9b9;  
+    display: flex;
+}
+.sub_title h2 { 
+    text-align:center;
+    line-height:50px; 
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sub_title a.back{
+    display: inline-block;
+    background-image: url(../img/check/img_prev.png);
+    width: 45px; height: 50px;
+    background-size: contain;
+    font-size: 0;
+}
+.sub_con > p { 
+    padding:20px 0 10px 12px;
+    font-size:14px;
+}
+
+
+/********** 진료예약 **********/
+.conlist { 
+    padding:20px 6px 0;
+    overflow:hidden; 
+}
+.conlist li { 
+    float: left;
+    width:50%;
+    padding: 6px; 
+}
+.conlist a {  
+    display:block;
+    height:100px;
+    background:#fff;
+    border:1px solid #b9b9b9;
+    border-radius:2px;
+    text-align:center;
+}
+.notice {
+    background-color: #ff6000;
+    margin: 25px 10px;
+    padding: 15px 20px;
+}
+.notice p {color: #fff;font-size: 15px;}
+.notice p.first{color: yellow;/*! font-weight: bold; */font-size: 18px;margin-bottom: 10px;}
+.notice p.last{color: yellow;/*! font-weight: bold; */margin-top: 10px;}
+
+.sub_con p.pd_n{padding: 10px;}
+
+.conlist li.long{ width: 100%;}
+
+.reser_btn{ 
+    background-color: #666666;
+    margin: 20px 12px;
+    border-radius: 2px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+.reser_btn img{
+    width: 24px;
+    height: 24px;
+    margin: 8px 6px;
+}
+.reser_btn p{
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 40px;
+}
